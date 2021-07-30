@@ -39,3 +39,12 @@ img {
     margin: 0 auto;
 }
 
+#heading {
+    color: blue;
+}
+
+.popular {
+    border-style: dotted;
+    border-color: #e61010;
+    border-width: 4px;
+}
