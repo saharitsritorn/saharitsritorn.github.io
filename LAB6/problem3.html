@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Problem 3</title>
+        <style>
+            body {
+                background-color: black;
+                padding: 10px;
+            }
+            
+            .planet {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 10px;
+                position: relative;
+            }
+            .moon {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: rgb(237, 237, 237);
+            }
+        </style>
+    </head>
+    <body>
+
+    <script>  
+        var planet = document.createElement("div");
+        planet.className = "planet";
+        planet.style.background = "gray";
+        document.body.appendChild(planet);
+
+        var moon = document.createElement("div");
+        moon.className = "moon";
+        moon.style.background = "yellow";
+        document.body.appendChild(moon);
+        planet.appendChild(moon);
+
+        var text = document.createElement("div");
+        text.style.color = "green";
+        text.innerHTML = "The planet and the moon";
+        document.body.appendChild(text);
+
+
+    </script>
+   
+
+    </body>
+</html>
